@@ -1,0 +1,23 @@
+{% extends "basic.html"%}
+
+
+{% block title %} Weather
+
+
+{% endblock %}
+
+{% block body%} <p>{{x}}</p>
+
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">{{name}}</h1>
+      <p class="lead">Temperature : {{x.main}}</p><br>
+      <p class="lead">WeatherDetail : {{x.wind}}</p>
+
+    </div>
+  </div>
+
+
+
+{% endblock%}
